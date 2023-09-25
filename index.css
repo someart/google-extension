@@ -1,22 +1,35 @@
 body {
     margin: 0;
     padding: 10px;
+    display: block;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 button {
-    background: #5f9341;
+    background: #0dd;
+    box-shadow: inset 0 0 1em rgba(0,170,170,0.5), 0 0 1em rgba(0,170,170,0.5);
+    border: #0dd solid 2px;
     color: white;
     padding: 10px 20px;
     border: none;
     font-weight: bold;
+
+  justify-content: center;
+  
+    transition: all 150ms ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 10px 0 #0dd inset, 0 0 10px 4px whitesmoke;
+    }
+  
 }
 
 .input-wrapper {
     --padding: 16px;
-    --focus-color: black;
+    --focus-color: #0dd;
     position: relative;
     display: flex;
     align-items: center;
@@ -24,7 +37,8 @@ button {
   
   input {
     padding: var(--padding);
-    border: 2px solid blue;
+    border: grey solid 2px;
+    color: black;
     outline: none;
     border-radius: 6px;
     width: 100%;
@@ -35,7 +49,7 @@ button {
   }
   .placeholder {
     position: absolute;
-    background-color: white;
+    background-color: none;
     color: gray;
     left: var(--padding);
     padding: 0 4px;
