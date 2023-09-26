@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 10px;
+    
     display: block;
-    text-align: center;
+   
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,9 +17,9 @@ button {
     padding: 10px 20px;
     border: none;
     font-weight: bold;
+   
 
-  justify-content: center;
-  
+
     transition: all 150ms ease-in-out;
     
     &:hover {
@@ -44,7 +45,8 @@ button {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
- 
+ padding-top: 12px;
+ margin-top:15px;
     margin-bottom: 4px;
   }
   .placeholder {
@@ -53,6 +55,7 @@ button {
     color: gray;
     left: var(--padding);
     padding: 0 4px;
+    margin-top: 15px;
     transition: all 0.2s ease-in;
   }
   
@@ -65,3 +68,16 @@ button {
     font-size: 14px;
     color: var(--focus-color);
   }
+  ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: #0dd;
+}
